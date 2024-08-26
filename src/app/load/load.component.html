@@ -1,0 +1,84 @@
+<ng-container>
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-danger rounded-5 shadow-sm" id="pillNav2" role="tablist"
+        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link rounded-5" id="home-tab2" routerLink="/home" routerLinkActive="active"
+           aria-selected="false">Home</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active rounded-5" id="profile-tab2" routerLink="/load" routerLinkActive="active"
+           aria-selected="true">Load</a>
+      </li>
+    </ul>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-danger p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark" style="background-color: #800020;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn btn-outline-light" style="margin-right: 35px;" (click)="logout()">LogOut</button>
+        <app-confirm-dialog *ngIf="showConfirmDialog" (confirm)="onConfirmDialogResult($event)"></app-confirm-dialog>
+      </nav>
+    </div>
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-white justify-content-center align-items-center"
+             style="width: 200px; height: 1000px; color: #800020; background-color: #800020;">
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto text-center">
+            <li class="nav-item text-center align-items-center">
+              <a routerLink="#" class="nav-link active d-flex align-items-center justify-content-center"
+                 aria-current="page" style="--bs-nav-pills-link-active-bg: var(--bs-white);">
+                <img src="assets/o.png" alt="" width="100" height="40" style="margin-left: 8px;">
+              </a>
+            </li>
+            <br>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <svg class="bi me-2" width="16" height="16">
+                  <use xlink:href="#people-circle"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <hr>
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+               id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow-1 centered-container" style="margin-right: 180px; margin-bottom: 400px;">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center">Upload Excel File</h1>
+            <form (ngSubmit)="onUpload()">
+              <div class="form-group">
+                <label for="fileInput">Select Excel File</label>
+                <input type="file" class="form-control" id="fileInput" (change)="onFileSelected($event)" />
+              </div>
+              <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+            <button *ngIf="excelData.length > 0" class="btn btn-success mt-3" (click)="downloadXml()">Download XML</button>
+
+          </div>
+        </div>
+      </div>
+      
+    </div> 
+  </ng-container>
+  

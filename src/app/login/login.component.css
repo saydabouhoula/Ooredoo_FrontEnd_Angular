@@ -1,0 +1,81 @@
+/* Styles pour le composant de login */
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-image: url('/assets/ERP_cleanup.jpg'); /* Chemin mis à jour */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video-container {
+  flex: 1; /* Occupe 50% de la largeur */
+ /* background-color: #f0f0f0; /* Couleur de fond pour la partie vidéo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  flex: 1; /* Occupe 50% de la largeur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px; /* Largeur maximale du formulaire */
+  width: 550px; /* Largeur relative du formulaire */
+  padding: 40px; /* Augmentation de l'espacement intérieur */
+  background-color: rgba(255, 255, 255, 0.5); /* Couleur de fond avec transparence */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto; /* Hauteur ajustée automatiquement en fonction du contenu */
+}
+
+.welcome-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #800020;  /* Couleur du texte Bienvenue */
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px; /* Augmentation de la taille du padding */
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px; /* Augmentation de la taille du padding */
+  background-color: #800020;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
