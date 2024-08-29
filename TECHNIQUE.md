@@ -35,9 +35,11 @@ git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
 
 ### 3.Configuration
 Configurer le fichier application.properties :
+```bash
+
 spring.application.name=Ooredoo
 
-# Configurations de la source de données
+## Configurations de la source de données
 spring.datasource.url=jdbc:oracle:thin:@localhost:1521:orcl
 spring.datasource.username=system
 spring.datasource.password=sayda
@@ -58,14 +60,14 @@ server.port=8094
 # Activer le mode debug pour plus de détails sur les erreurs
 debug=true
 
+```
+## 4. Construire le Projet
 
-### 4. Construire le Projet
-
-# Backend : Naviguez dans le répertoire du backend et exécutez :
+### Backend : Naviguez dans le répertoire du backend et exécutez :
 
  mvn clean instal
 
-# Frontend : Naviguez dans le répertoire du frontend et exécutez :
+### Frontend : Naviguez dans le répertoire du frontend et exécutez :
 
  npm install
  ng serve
