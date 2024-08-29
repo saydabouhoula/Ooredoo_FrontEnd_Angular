@@ -31,7 +31,7 @@ git clone https://github.com/saydabouhoula/Ooredoo_FrontEnd_Angular.git
 
 **Backend :**
 git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
-
+```
 
 ### 3.Configuration
 Configurer le fichier application.properties :
