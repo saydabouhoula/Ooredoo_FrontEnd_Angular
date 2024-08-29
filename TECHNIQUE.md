@@ -64,10 +64,13 @@ debug=true
 ## 4. Construire le Projet
 
 ### Backend : Naviguez dans le répertoire du backend et exécutez :
+```bash
 
  mvn clean instal
-
+```
 ### Frontend : Naviguez dans le répertoire du frontend et exécutez :
+```bash
 
  npm install
  ng serve
+ ```
