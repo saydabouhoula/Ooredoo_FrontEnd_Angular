@@ -65,7 +65,6 @@ git clone https://github.com/saydabouhoula/Ooredoo_FrontEnd_Angular.git
 
 ```bash
 
-**Backend :**
 git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
 ```
 
