@@ -18,10 +18,10 @@ Le projet est composé de trois principaux composants :
 
 ## Installation
 ### 1. Prérequis
-- **Java JDK 17**
-- **Maven 3.9.2**
-- **Oracle Database 19c**
-- **SQL Developer 23.1.1.345**
+- **Java JDK** : 17
+- **Maven** :  3.9.2
+- **Oracle Database** : 19c
+- **SQL Developer** : 23.1.1.345
 
 ### 2. Environnement de Développement
 - **IDE** : IntelliJ IDEA 2023.2.1
