@@ -41,7 +41,6 @@ Le projet est composé de trois principaux composants :
 - **Hibernate** : 6.1.0.Final
 - **Jackson Datatype JSR310** : 2.15.2
 - **Apache POI** : 5.2.2
-- **Lombok** : ---
 
 ### 6. Frontend
 - **Angular** : 14.0.0
