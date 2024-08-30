@@ -22,7 +22,32 @@ Le projet est composé de trois principaux composants :
 - **Maven 3.9.2**
 - **Oracle Database 19c**
 
-### 2. Cloner le Référentiel
+### 2. Environnement de Développement
+- **IDE** : IntelliJ IDEA 2023.2.1
+- **Java** : 17.0.8
+- **Maven** : 3.9.2
+
+### 3. Serveur d'Application
+- **Serveur** : Tomcat (inclus avec Spring Boot)
+
+### 4. Base de Données
+- **Base de Données** : Oracle Database 19c
+- **Driver JDBC** : Oracle JDBC ojdbc11
+
+### 5. Frameworks et Bibliothèques
+- **Spring Boot** : 3.1.4
+- **Spring Data JPA** : 3.1.4
+- **Hibernate** : 6.1.0.Final
+- **Jackson Datatype JSR310** : 2.15.2
+- **Apache POI** : 5.2.2
+- **Lombok** : ---
+
+### 6. Plugins Maven
+- **Maven War Plugin** : 3.4.0
+- **Maven Resources Plugin** : 3.3.1
+- **Maven Dependency Plugin** : 3.5.0
+
+### 7. Cloner le Référentiel
 Clonez le projet depuis le dépôt Git :
 ```bash
 
@@ -33,7 +58,7 @@ git clone https://github.com/saydabouhoula/Ooredoo_FrontEnd_Angular.git
 git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
 ```
 
-### 3.Configuration
+### 8.Configuration
 Configurer le fichier application.properties :
 ```bash
 
@@ -74,3 +99,4 @@ debug=true
  npm install
  ng serve
  ```
+
