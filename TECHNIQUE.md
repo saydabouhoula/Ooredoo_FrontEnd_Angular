@@ -42,12 +42,18 @@ Le projet est composé de trois principaux composants :
 - **Apache POI** : 5.2.2
 - **Lombok** : ---
 
-### 6. Plugins Maven
+### 6. Frontend
+- **Angular** : 14.0.0
+- **TypeScript** : ~4.7.2
+- **Bootstrap** : 5.3.3
+
+
+### 7. Plugins Maven
 - **Maven War Plugin** : 3.4.0
 - **Maven Resources Plugin** : 3.3.1
 - **Maven Dependency Plugin** : 3.5.0
 
-### 7. Cloner le Référentiel
+### 8. Cloner le Référentiel
 Clonez le projet depuis le dépôt Git :
 ```bash
 
@@ -58,7 +64,7 @@ git clone https://github.com/saydabouhoula/Ooredoo_FrontEnd_Angular.git
 git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
 ```
 
-### 8.Configuration
+### 9.Configuration
 Configurer le fichier application.properties :
 ```bash
 
