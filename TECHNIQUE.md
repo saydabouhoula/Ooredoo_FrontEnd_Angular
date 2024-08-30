@@ -55,10 +55,13 @@ Le projet est composé de trois principaux composants :
 
 ### 8. Cloner le Référentiel
 Clonez le projet depuis le dépôt Git :
-```bash
 
 **Frontend :**
+```bash
+
 git clone https://github.com/saydabouhoula/Ooredoo_FrontEnd_Angular.git
+```
+```bash
 
 **Backend :**
 git clone https://github.com/saydabouhoula/Ooredoo_backEndSpring.git
