@@ -17,11 +17,11 @@ Exécutez
 mvn clean install
 ```
 pour le projet Spring Boot.
-Lancez le serveur Spring Boot en exécutant
+Lancez le serveur Spring Boot en exécutant :
 ```bash
 mvn spring-boot:run
 ```
-Lancez le serveur Angular avec 
+Lancez le serveur Angular : 
 ```bash
 ng serve
 ```
@@ -40,8 +40,76 @@ Connexion à l'application
 http://localhost:4200/login
 ```
 2. Un formulaire de connexion s’affiche.
-- Dans le champ Username, entrez admin
-- Dans le champ Password, entrez admin
+- Dans le champ Username, entrez : admin
+- Dans le champ Password, entrez : admin
 3. Cliquez sur le bouton Login. Vous serez redirigé vers la Dashboard de l’application.
-## D�pannage  Solutions aux probl�mes courants.  
-## FAQ  R�ponses aux questions fr�quentes. 
+## Charger un fichier Excel
+1. Sur la Dashboard, vous trouverez un formulaire pour charger un fichier Excel.
+2. Cliquez sur le bouton Parcourir et sélectionnez le fichier Excel à charger depuis votre ordinateur.
+3. Une fois le fichier sélectionné, cliquez sur Charger pour envoyer les données vers la base de données.
+4. Un message de confirmation s'affichera une fois que les données sont bien insérées dans la base de données.
+## Télécharger un fichier au format XML
+1. Après avoir chargé les données, un bouton Download XML apparaîtra.
+2. Cliquez sur ce bouton pour télécharger un fichier au format XML contenant les données traitées.
+3. Vous pouvez ouvrir ce fichier avec un éditeur de texte comme le Bloc-notes ou tout autre éditeur pour consulter les données en format XML.
+
+Le fichier XML ressemblera à ceci :
+```bash
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DeclarationsRS VersionSchema="1.0">
+  <Declarant>
+    <TypeIdentifiant>1</TypeIdentifiant>
+    <Identifiant>0789012H</Identifiant>
+    <CategorieContribuable>PM</CategorieContribuable>
+  </Declarant>
+  <ReferenceDeclaration>
+    <ActeDepot>0</ActeDepot>
+    <AnneeDepot>2024</AnneeDepot>
+    <MoisDepot>06</MoisDepot>
+  </ReferenceDeclaration>
+  <AjouterCertificats>
+    <Certificat>
+      <Beneficiaire>
+        <IdTaxpayer>
+          <MatriculeFiscal>
+            <TypeIdentifiant>1</TypeIdentifiant>
+            <Identifiant>0042704H</Identifiant>
+            <CategorieContribuable>PP</CategorieContribuable>
+          </MatriculeFiscal>
+        </IdTaxpayer>
+        <Resident>1</Resident>
+        <NometprenonOuRaisonsociale>CNTRE D'ETUDES-RECHE DE TELECOMMUNICATION</NometprenonOuRaisonsociale>
+        <Adresse>000 POLE TECH GHAZALA RAOUED 2081</Adresse>
+        <Activite>BUREAU D'ETUDES</Activite>
+        <InfosContact>
+          <AdresseMail>cert@cert.mincom.tn</AdresseMail>
+          <NumTel>70835000</NumTel>
+        </InfosContact>
+      </Beneficiaire>
+      <DatePayement>03/06/2024</DatePayement>
+      <Ref_certif_chez_declarant>W-RCO-0337-24</Ref_certif_chez_declarant>
+      <ListeOperations>
+        <Operation IdTypeOperation="RS2_000002">
+          <AnneeFacturation>2024</AnneeFacturation>
+          <CNPC>0</CNPC>
+          <P_Charge>0</P_Charge>
+          <MontantHT>1576271</MontantHT>
+          <TauxRS>3</TauxRS>
+          <TauxTVA>19</TauxTVA>
+          <MontantTVA>299491</MontantTVA>
+          <MontantTTC>1875762</MontantTTC>
+          <MontantRS>56272</MontantRS>
+          <MontantNetServi>1819490</MontantNetServi>
+        </Operation>
+      </ListeOperations>
+      <TotalPayement>
+        <TotalMontantHT>1576271</TotalMontantHT>
+        <TotalMontantTVA>299491</TotalMontantTVA>
+        <TotalMontantTTC>1875762</TotalMontantTTC>
+        <TotalMontantRS>56272</TotalMontantRS>
+        <TotalMontantNetServi>1819490</TotalMontantNetServi>
+      </TotalPayement>
+    </Certificat>
+  </AjouterCertificats>
+</DeclarationsRS>
+```
