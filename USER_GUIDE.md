@@ -113,3 +113,11 @@ Le fichier XML ressemblera à ceci :
   </AjouterCertificats>
 </DeclarationsRS>
 ```
+
+## Dépannage
+Voici quelques solutions aux problèmes courants que vous pourriez rencontrer :
+
+- Problème de connexion : Assurez-vous que le serveur Spring Boot est bien démarré sur le port 8094 et que l'URL est correcte.
+- Erreur lors du chargement du fichier Excel : Vérifiez que le fichier est bien formaté et contient les bonnes colonnes avant de l'importer.
+- Impossible de télécharger le fichier XML : Assurez-vous que le bouton Download XML s'affiche bien après le chargement des données.
+
