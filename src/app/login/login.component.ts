@@ -17,7 +17,7 @@ export class LoginComponent {
   onSubmit() {
     this.authService.login(this.username, this.password).subscribe(success => {
       if (success) {
-        this.router.navigate(['/home']);  // Rediriger vers la page d'accueil après le login réussi
+        this.router.navigate(['/load']);  // Rediriger vers la page d'accueil après le login réussi
       } else {
         this.errorMessage = 'Invalid login or password';
       }
